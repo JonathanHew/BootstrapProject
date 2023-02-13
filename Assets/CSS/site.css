@@ -67,11 +67,12 @@
     border-color: #f1f1f1;
   }
 
-  .card-body {
-    min-height: 200px;
+  .card {
+    min-height: 515px;
   }
 
   #table-div {
     width: 80%;
     margin: 0 auto;
   }
+
