@@ -4,6 +4,77 @@ let newsletterFirstName = document.getElementById("newsletterFirstName");
 let newsletterLastName = document.getElementById("newsletterLastName");
 let newsletterTeam = document.getElementById("newsletterTeam");
 let newsletterCheck =document.getElementById("newsletterCheck");
+let msg = document.getElementById("msg");
+
+
+let formValidation = () => {
+    msg.innerHTML = "";
+    let valid = true;
+
+    if (newsletterEmail.value === "") {
+      msg.innerHTML += `<p>Email cannot be blank!</p>`;
+      valid = false;
+    }
+    else if(/^\S+@\S+\.\S+$/.test(newsletterEmail.value) == false)
+    {
+      msg.innerHTML += `<p>Email is not in the correct format!</p>`;
+      valid = false;
+    }
+    else if(newsletterEmail.value.length > 40)
+    {
+      msg.innerHTML += `<p>Email should be less than 40 characters!</p>`;
+      valid = false;
+    }
+  
+    if (newsletterFirstName.value === "") {
+      msg.innerHTML += `<p>Firstname cannot be blank!</p>`;
+      valid = false;
+    }
+    else if(/^[a-zA-Z\s]+$/.test(newsletterFirstName.value) == false)
+    {
+      msg.innerHTML += `<p>Firstname can only contain characters!</p>`;
+      valid = false;
+    }
+    else if(newsletterFirstName.value.length > 20)
+    {
+      msg.innerHTML += `<p>Firstname cannot be more than 20 characters!</p>`;
+      valid = false;
+    }
+  
+    if (newsletterLastName.value === "") {
+        msg.innerHTML += `<p>Lastname cannot be blank!</p>`;
+        valid = false;
+    }
+    else if(/^[a-zA-Z\s]+$/.test(newsletterLastName.value) == false)
+    {
+        msg.innerHTML += `<p>Lastname can only contain characters!</p>`;
+        valid = false;
+    }
+    else if(newsletterLastName.value.length > 20)
+    {
+        msg.innerHTML += `<p>Lastname cannot be more than 20 characters!</p>`;
+        valid = false;
+    }
+
+    if(newsletterTeam.value === "0") {
+        msg.innerHTML += `<p>Please choose a team!</p>`;
+        valid = false;
+    }
+
+    if(!(newsletterCheck.checked)) {
+        msg.innerHTML += `<p>You have not agreed to recieve the newsletter!</p>`;
+        valid = false;
+    }
+
+  
+    if (valid === true) {
+      console.log("Success!!");
+      msg.innerHTML = "";
+      acceptData();
+    } else {
+      return false;
+    }
+  };
 
 let sortTable = (n) => {
     let rows = 0;

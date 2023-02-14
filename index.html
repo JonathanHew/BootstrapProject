@@ -561,7 +561,7 @@
                   <div class="mb-3">
                     <label class="form-label">Favourite Lebron Team</label>
                     <select id="newsletterTeam" class="form-select" aria-label="Default select example">
-                      <option selected>Open this select menu</option>
+                      <option value ="0" selected>Open this select menu</option>
                       <option value="1">Cleveland Cavaliers </option>
                       <option value="2">Miami Heat</option>
                       <option value="3">LA Lakers</option>
@@ -583,7 +583,10 @@
                     <input type="checkbox" class="form-check-input" id="newsletterCheck">
                     <label class="form-check-label" for="newsletterCheck">Do you agree to sign up to the newsletter? </label>
                   </div>
-                  <button type="submit" class="btn btn-primary">Submit</button>
+                  <div id="msg">
+                    
+                  </div>
+                  <button type="button" class="btn btn-primary" onclick="return formValidation()">Submit</button>
                 </form>
               </div>
             </div>

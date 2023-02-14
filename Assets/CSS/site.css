@@ -81,3 +81,6 @@
   cursor: pointer;
 }
 
+#msg {
+  color: red;
+}
