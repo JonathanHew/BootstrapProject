@@ -544,23 +544,23 @@
               <div class="offcanvas-body">
                 <form>
                   <div class="mb-3">
-                    <label for="exampleInputEmail1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <label for="newsletterEmail" class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="newsletterEmail" aria-describedby="emailHelp">
                     <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                   </div>
                   <div class="mb-3">
                     <div class="row">
                       <div class="col">
-                        <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                        <input type="text" id="newsletterFirstName" class="form-control" placeholder="First name" aria-label="First name">
                       </div>
                       <div class="col">
-                        <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                        <input type="text" id="newsletterLastName" class="form-control" placeholder="Last name" aria-label="Last name">
                       </div>
                     </div>
                   </div>
                   <div class="mb-3">
                     <label class="form-label">Favourite Lebron Team</label>
-                    <select class="form-select" aria-label="Default select example">
+                    <select id="newsletterTeam" class="form-select" aria-label="Default select example">
                       <option selected>Open this select menu</option>
                       <option value="1">Cleveland Cavaliers </option>
                       <option value="2">Miami Heat</option>
@@ -568,20 +568,20 @@
                     </select>
                   </div>
                   <div class="mb-3">
-                    <label for="exampleColorInput" class="form-label">What color would you like next seasons "City" jersey to be?</label>
-                    <input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+                    <label for="newsletterColor" class="form-label">What color would you like next seasons "City" jersey to be?</label>
+                    <input type="color" class="form-control form-control-color" id="newsletterColor" value="#563d7c" title="Choose your color">
                   </div>
                   <div class="mb-3">
-                    <label for="formFile" class="form-label">Do you have a selfie with Lebron James? If so attach it!</label>
-                    <input class="form-control" type="file" id="formFile">
+                    <label for="newsletterFile" class="form-label">Do you have a selfie with Lebron James? If so attach it!</label>
+                    <input class="form-control" type="file" id="newsletterFile">
                   </div>
                   <div class="mb-3">
-                    <label for="customRange3" class="form-label">How much did you like this page?</label>
-                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="customRange3">
+                    <label for="newsletterRange" class="form-label">How much did you like this page?</label>
+                    <input type="range" class="form-range" min="0" max="5" step="0.5" id="newsletterRange">
                   </div>
                   <div class="mb-3 form-check">
-                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                    <label class="form-check-label" for="exampleCheck1">Do you agree to sign up to the newsletter? </label>
+                    <input type="checkbox" class="form-check-input" id="newsletterCheck">
+                    <label class="form-check-label" for="newsletterCheck">Do you agree to sign up to the newsletter? </label>
                   </div>
                   <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
