@@ -76,3 +76,8 @@
     margin: 0 auto;
   }
 
+.tableHeader:hover{
+  color: purple;
+  cursor: pointer;
+}
+
