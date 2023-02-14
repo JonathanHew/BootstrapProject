@@ -1,4 +1,9 @@
 let statTable = document.getElementById("statTable");
+let newsletterEmail = document.getElementById("newsletterEmail");
+let newsletterFirstName = document.getElementById("newsletterFirstName");
+let newsletterLastName = document.getElementById("newsletterLastName");
+let newsletterTeam = document.getElementById("newsletterTeam");
+let newsletterCheck =document.getElementById("newsletterCheck");
 
 let sortTable = (n) => {
     let rows = 0;
