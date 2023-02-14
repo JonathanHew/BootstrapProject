@@ -64,7 +64,8 @@
     
   }
   .circ:hover {
-    border-color: #f1f1f1;
+    border-color: blueviolet;
+    opacity: 0.6;
   }
 
   .card {
@@ -81,6 +82,14 @@
   cursor: pointer;
 }
 
-#msg {
+#errMsg {
   color: red;
+}
+
+#successMsg {
+  color: green;
+}
+
+#title {
+  color: blueviolet;
 }

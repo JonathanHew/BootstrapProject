@@ -15,12 +15,12 @@
 
   <body>
     <header>
-      <div class="collapse bg-dark" id="navbarHeader">
+      <div class="collapse bg-secondary" id="navbarHeader">
         <div class="container">
           <div class="row">
             <div class="col-sm-8 col-md-7 py-4">
               <h4 class="text-white">About</h4>
-              <p class="text-muted">
+              <p class="text-white">
                 Lebron James is widely considered as one of the greatest basketball players of all time. With his awe-inspiring skills, unmatched athleticism, and fierce competitiveness, he has dominated the court and made a lasting impact on the game. Throughout his illustrious career, James has amassed numerous accolades, including four NBA championships, four MVP awards, and 17 All-Star selections. This website is dedicated to providing comprehensive information about the life, career, and achievements of LeBron James, along with interesting insights and trivia about one of the greatest players in the history of the sport. Whether you're a fan or simply want to learn more about this legendary figure, you've come to the right place.
               </p>
             </div>
@@ -33,7 +33,7 @@
           </div>
         </div>
       </div>
-      <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="navbar navbar-light bg-warning shadow-sm">
         <div class="container">
           <a href="#" class="navbar-brand d-flex align-items-center">
             <svg
@@ -98,7 +98,7 @@
 
       <div class="album py-5 bg-light">
         <div class="container text-center">
-          <h2 class="mb-3">Lebron James Career</h2>
+          <h2 class="mb-3" id="title">Lebron James Career</h2>
           <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 g-3">
             <div class="col">
               <div class="card shadow-sm">
@@ -189,7 +189,7 @@
         </div>
       </div>
       <section class="py-5 text-center container">
-        <h2 class="text-center">Regular Season Statistics</h2>
+        <h2 class="text-center" id="title">Regular Season Statistics</h2>
         <p class="text-muted">Click on the headings below to sort the table!</p>
         <div id="table-div">
           <table class="table table-striped" id="statTable">
@@ -361,7 +361,7 @@
         </div>
       </section>
       <div class="text-center py-5 bg-light">
-        <h2 class="mb-3">Accomplishments</h2>
+        <h2 class="mb-3" id="title">Accomplishments</h2>
         <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3 g-3">
           <div class="col">
             <p><strong>4x NBA Champion</strong></p>
@@ -518,11 +518,69 @@
           <div class="modal-dialog modal-dialog-scrollable modal-lg">
             <div class="modal-content">
               <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                <h1 class="modal-title fs-5" id="exampleModalLabel">My Improvements</h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
               <div class="modal-body">
-                <p>Modal Body</p>
+                <h2>Original Template</h2>
+                <a href="https://getbootstrap.com/docs/5.2/examples/album/">https://getbootstrap.com/docs/5.2/examples/album/</a>
+                <p>I chose this template as it was very minimal. I wanted a basic template which did not have multiple different pages and thousands of lines of code. This template allowed me to implement bootstrap components myself wihtout any boiler plate code. </p>
+                <br>
+                <h2>Extra Components</h2>
+                <p>The only feature I kept from the template was the NavBar. Everything else I changed or added myself. In this section I will list all features I implemented.</p>
+                
+                <h5>Carousel</h5>
+                <p>The first feature I added was a carousel. This carousel uses a set interval to automatically slide to next picture. It features 3 different pictures of Lebron James.</p>
+                <h5>Circle Images</h5>
+                <p>I created 3 circle images, each with one of Lebrons greatest accomplishments. These 3 images are also fully responsive and will stack on top of eachother on a smaller screen.</p>
+                <h5>Striped Table</h5>
+                <p>I created a table with stripes to display data on Lebron James career statistics. This table also includes the use of JavaScript. When you click on a table heading it will sort the table according to the data in the corrosponding heading.</p>
+                <h5>Cards</h5>
+                <p>I created 4 cards on my website. Each card represents the teams which Lebron James has played for. Each card contains text and also an image which I have also made circular. These cards are fully responsive. On large screens all 4 cards are on 1 row. On medium screens this changes to 2 cards on 2 rows and on small screens the cards will be stacked one on top of eachother.</p>
+                <h5>Accordion</h5>
+                <p>I created an accordion to hold information about the 3 accomplishments previously mentioned in the 3 circle images. Each body of information will appear or dissapear when clicked</p>
+                <h5>Lists</h5>
+                <p>Inside 2 of the accordion bodies, i have implemented lists to display data in a list fashion.</p>
+                <h5>Embedded YouTube Video</h5>
+                <p>I have embedded a video from YouTube onto my website. This is also fully responsive.</p>
+                <h5>Jumbotron</h5>
+                <p>I have created 2 Jumbotrons at the bottom of the website. These Jumbotrons are side by side but aere fully responsive and stack on smaller screens. Each Jumbotron contains a button which will carry out different functionalities.</p>
+                <h5>Buttons</h5>
+                <p>This website has many buttons. For example both Jumbotrons have a button which when clicked will either show a sign up form or else open a modal.</p>
+                <h5>Off Canvas Form</h5>
+                <p>When the sign up button on the page is clicked an off canvas will appear. A off cancanvas is a sidebar component. Inside the off canvas includes a form which the user can fill out. This form also uses JavaScript to validate the inputs and will show error messages or a success message depending on the inputs. The form can then be closed by clicking off the off canvas or by clicking the X button on the top right.</p>
+                <h5>Various Inputs</h5>
+                <p>The sign up form contains various inputs such as a dropdown menu, color picker, file upload, range and a checkbox.</p>
+                <h5>Modal</h5>
+                <p>When the show more button is clicked this Modal opens and displays information to the user. The modal can be closed by clicking the X on the top right or the close button at the bottom. This modal is also scrollable.</p>
+                <br>
+                <h2>Additions to JavaScript</h2>
+                <p>I have added 2 JavaScipt features to this website:</p>
+                <h5>Sort Striped Table</h5>
+                <p>The striped table can be sorted by the table headers. For example if the column header PPG is clicked, The table will sort the rows from smallest to biggest dynamically without refreshing. If clicked again it will sort the table by biggest to smallest. This works for all table headings.</p>
+                <h5>Sign Up Form Validation</h5>
+                <p>The sign up form is validated on submission. For example Regex is used to ensure that email used contains the @ symbol and ends with .com/.ie etc. If the validation finds any errors it will display them to the user. Once all inputs are valid the validator will display a success message to the user and the form is reset.</p>
+                <br>
+                <h2>CSS</h2>
+                <p>The CSS from the original template has been changed. The colors used on this website have been changed to a yellow and purple theme. These colors were chosen because they are the colors of the Los Angeles Lakers team which Lebron James currently plays for.</p>
+                <br>
+                <h2>Effects</h2>
+                <p>Afew extra effects have been added:</p>
+                <h5>Carousel</h5>
+                <p>The slides of the carousel will automatically switch.</p>
+                <h5>Hover Effects</h5>
+                <p>I have also changed the table headings to change font color and also change the cursor to a pointer to indicate that they are clickable.</p>
+                <p>The 3 round circle images will also change effect when they are hovered over. Each image will get a purple border and also the opacity wil change to make the image slightly translucent.</p>
+                <h5>Off Canvas Open & Close</h5>
+                <p>When the off canvas is opened it has an effect which maked it appear to slide out from the right side of the screen.</p>
+                <h5>Modal Open & Close</h5>
+                <p>When the modal is opened and closed it appears to fade in and out. </p>
+                <br>
+                <h2>Responsiveness</h2>
+                <p>This website is fully responsive. It was tested using Google Chrome dev tools. Specifically the iPhone 12 pro, iPad Air screen sizes on Dev tools along with my MacBooks screen were used to analyze the responsiveness.</p>
+                <br>
+                <h2>Why I Chose This Topic</h2>
+                <p>I chose to create this website on Lebron James as he is my favourite basketball player. Lebron James is currently trending right now as he recently broke the NBA all time scoring record which was held by Kareem Abdul Jabbar for 39 years!</p>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -531,14 +589,14 @@
           </div>
         </div>
         <div class="col-md-6">
-          <div class="h-100 p-5 bg-light border rounded-3">
+          <div class="h-100 p-5 bg-warning border rounded-3">
             <h2>Sign Up To Our Newsletter!</h2>
             <p>Want to keep up to date with the latest Lebron James news? Click on the button below and fill out the form to start recieving our weekly email newsletter!</p>
             <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Sign Up</button>
           
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
               <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                <h5 class="offcanvas-title" id="offcanvasRightLabel">Sign Up</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div class="offcanvas-body">
@@ -583,10 +641,13 @@
                     <input type="checkbox" class="form-check-input" id="newsletterCheck">
                     <label class="form-check-label" for="newsletterCheck">Do you agree to sign up to the newsletter? </label>
                   </div>
-                  <div id="msg">
+                  <div id="errMsg">
                     
                   </div>
-                  <button type="button" class="btn btn-primary" onclick="return formValidation()">Submit</button>
+                  <div id="successMsg">
+
+                  </div>
+                  <button type="button" class="btn btn-warning" onclick="return formValidation()">Submit</button>
                 </form>
               </div>
             </div>
